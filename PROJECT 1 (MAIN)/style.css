@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.home{
+    background-image: url(images/one.jpg);
+    min-height: 100vh;
+    width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60px;
+    background-color: rgb(20, 20, 20);
+}
+.navbar .logo{
+    color: rgb(235, 235, 235);
+    letter-spacing: 4px;
+    font-size: 23px;
+}
+.nav-links{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+.nav-links li{
+    list-style: none;   
+}
+.nav-links a{
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+.nav-links a.active{
+    background: rgba(113, 255, 255, 0.6);
+}
+.nav-links li a:hover{
+    color: rgb(235, 235, 235);
+    background-color: rgba(113, 255, 255, 0.6);
+}
+.intro{
+    color: rgb(235, 235, 235);
+    width: 40%;
+    margin: 165px 80px;
+}
+.intro h1{
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+.intro p{
+    font-weight: 200;
+    font-size: 30px;
+}
+.intro b{
+    font-weight: 400;
+}
+.intro .p2{
+    color: rgb(133, 133, 133);
+    font-size: 18px;
+}
+.intro .p2 a{
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+/* About Page */
+
+.about{
+    background: rgb(27, 27, 27);
+    min-height: 100vh;
+	scroll-behavior: smooth;
+}
+.info{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    line-height: 2.5;
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    width: 75%;
+    min-height: 450px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    color: rgb(184, 184, 184);
+
+}
+.texts{
+    padding: 10px;
+    flex-basis: 65%;
+}
+.me img{
+   margin: 90px 50px; 
+}
+.about-me h1{
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.about-me h2{
+    color: rgb(184, 184, 184);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.about-me h3{
+    color: rgb(184, 184, 184);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.info{
+    width: 80%;
+}
+.bio{
+    width: 90%;
+}
+
+/* Resume */
+
+.resume{
+    background: rgb(27, 27, 27);
+    min-height: 300vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	scroll-behavior: smooth;
+    
+}
+.resume-box {
+    background: rgb(27, 27, 27);
+    width: 80%;
+    margin: 80px auto;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.resume-left {
+    background-color: rgb(10, 10, 10);
+    padding: 40px;
+}
+.left-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+}
+.resume-right {
+    background-color: rgb(20, 20, 20);
+    padding: 40px;
+}
+h1{
+    color: rgb(184, 184, 184);
+}
+p {
+    color: rgb(184, 184, 184);
+}
+
+/* services */
+
+.services{
+    background: rgb(27, 27, 27);
+    min-height: 130vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	scroll-behavior: smooth;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    height: 100vh;
+    padding: 20px;
+    margin: 60px auto;
+    background-color: rgb(20, 20, 20);
+    width: 90%;
+}
+.box{
+    background: rgb(172, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    transition: 0.6s ease;
+}
+.box:hover{
+    box-shadow: 5px 5px 5px rgb(69, 97, 97);
+}
+
+/* Portfolio */
+
+.portfolio{
+    background: rgb(27, 27, 27);
+    min-height: 130vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+/* Contact */
+
+.contact {
+    background: rgb(27, 27, 27);
+    min-height: 100vh;
+	scroll-behavior: smooth;
+}
+.contact-box {
+    width: 60%;
+    margin: 150px 80px;
+}
+.contact-text {
+    letter-spacing: 3px;
+    width: 40%;
+    font-size: 55px;
+    color: rgb(214, 214, 214);
+}
+.contact-paragraph {
+    width: 45%;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(214, 214, 214);
+    margin-left: 85px;
+}
+.contact-paragraph p a {
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
